@@ -17,7 +17,8 @@ gulp.task('watch', () => {
 	gulp.watch(`${config.path.css.src}.${cssExt}`, ['css']);
 	gulp.watch(`${config.path.js.src}.js`, ['js']);
 	gulp.watch(`${config.path.img.src}.+(png|jpeg|jpg|gif)`, ['img']);
-	gulp.watch(`${config.path.src}sprite/*.png`, ['sprite']);
+	gulp.watch(`${config.path.src}**/*sprites/*.png`, ['sprite']);
+	gulp.watch(`${config.path.src}**/*.${config.setting.copy.ext}`, ['copy']);
 	gulp.watch(
 		[`${config.path.dist}/**/*.{html,js,png,jpg,jpeg,gif,svg}`], ['reload']
 	);

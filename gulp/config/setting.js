@@ -19,7 +19,7 @@ const setting = {
 	},
 
 	js: {
-		webpack: false,  // true or false
+		webpack: true,  // true or false
 		options: {
 			watch: true,
 			module: {
@@ -42,6 +42,10 @@ const setting = {
 
 		sprite: true,
 		spritePrefix: 'sprite-'
+	},
+
+	copy: {
+		ext: '(json)'
 	}
 
 };

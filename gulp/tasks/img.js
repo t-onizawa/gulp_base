@@ -19,8 +19,8 @@ const
  * TASK
  */
 gulp.task('img', () => {
-	return gulp.src(config.path.img.src + '.' + '+(png|jpeg|jpg|gif|svg)')
-		// .pipe(changed(config.path.dist + config.path.img.directoryName))
+	return gulp.src(config.path.img.src + '.+(png|jpeg|jpg|gif|svg)')
+		.pipe(changed(config.path.dist + config.path.img.directoryName))
 		.pipe(plumber({
 			errorHandler: function(err) {
 				console.log(err);

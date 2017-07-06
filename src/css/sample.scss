@@ -1,0 +1,8 @@
+// spriteをtrueにしていると_sprite.scssが作成されるので
+// importし、spritesをinclude
+@import 'sprite';
+@include sprites($spritesheet-sprites);
+[class^="sprite"] {
+  display: inline-block;
+}
+

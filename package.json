@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp",
-    "start": "gulp"
+    "start": "gulp",
+    "dev": "gulp",
+    "build": "gulp build",
+    "imgmin": "gulp img",
+    "server": "gulp server",
+    "clean": "gulp del"
   },
   "author": "",
   "license": "ISC",

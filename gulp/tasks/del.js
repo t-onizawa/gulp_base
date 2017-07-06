@@ -1,7 +1,8 @@
 // require
 const
 	config = require('../config/config.js'),
-	gulp = require('gulp');
+	gulp = require('gulp'),
+	del = require('del');
 
 /**
  * TASK

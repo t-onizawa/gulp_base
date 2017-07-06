@@ -14,6 +14,6 @@ requireDir('./gulp/tasks', {recurse: true});
 gulp.task('default', () => {
 	runSequence(
 		'sprite:png',
-		['html', 'css', 'js', 'img', 'watch', 'server']
+		['html', 'css', 'js', 'img', 'copy', 'watch', 'server']
 	);
 });

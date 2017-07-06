@@ -14,7 +14,7 @@ gulp.task('build', (cb) => {
 
 	runSequence(
 		'sprite',
-		['html','css','js','img'],
+		['html','css','js','img', 'copy'],
 		cb
 	);
 });
