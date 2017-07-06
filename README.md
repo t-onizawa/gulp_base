@@ -46,7 +46,7 @@ gulp del    (distフォルダの削除のみ)
 - copyに拡張子を追加することでコンパイルを必要としないファイルを出力先フォルダにコピーします。
 
 ## npm scripts
-使いそうな個別でscriptsを設定しています。
+使いそうなscripts個別でを設定しています。
 ```
 npm start       =   gulp
 npm run dev     =   gulp
